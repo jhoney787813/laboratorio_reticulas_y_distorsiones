@@ -139,6 +139,9 @@ Ejecuta el script con:
 node index.js
 ```
 
+
+[-> Ver Explicación Simple de la Implementación](https://github.com/jhoney787813/laboratorio_reticulas_y_distorsiones/blob/main/explicacion.md)
+
 ---
 
 ## 📚 **Conclusión**
