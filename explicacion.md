@@ -19,8 +19,11 @@ Si conocemos la misma fórmula usada para distorsionar, podemos invertir el proc
 📌 ¿Para qué sirve?
 
 Seguridad digital 🔒: Se puede usar para esconder información en imágenes.
+
 Esteganografía 🕵️‍♂️: Permite ocultar datos dentro de imágenes de forma que solo quien sepa la clave pueda recuperarlos.
+
 Forense digital 🧐: Los investigadores pueden analizar imágenes manipuladas para detectar cambios o revertir modificaciones.
+
 📌 Ejemplo práctico
 Imagina que tomas una foto y la distorsionas con este código antes de compartirla. Solo alguien con el mismo código puede verla correctamente. ¡Es como un filtro de privacidad en las imágenes!
 
