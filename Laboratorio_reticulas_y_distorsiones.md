@@ -140,6 +140,43 @@ node index.js
 ```
 
 
+## 🔄 Paso 3: Aplicar la Transformación Inversa
+
+Agrega la siguiente función a index.js para restaurar la imagen original:
+
+```javascript
+async function reverseDistortion(inputPath, outputPath, gridSize = 20) {
+    const img = await loadImage(inputPath);
+    const canvas = createCanvas(img.width, img.height);
+    const ctx = canvas.getContext('2d');
+
+    const cols = Math.ceil(img.width / gridSize);
+    const rows = Math.ceil(img.height / gridSize);
+
+    for (let y = 0; y < rows; y++) {
+        for (let x = 0; x < cols; x++) {
+            let dx = x * gridSize;
+            let dy = y * gridSize;
+            let sx = dx - Math.sin(y * 0.5) * 5;
+            let sy = dy - Math.cos(x * 0.5) * 5;
+
+            ctx.drawImage(img, sx, sy, gridSize, gridSize, dx, dy, gridSize, gridSize);
+        }
+    }
+
+    const buffer = canvas.toBuffer('image/png');
+    fs.writeFileSync(outputPath, buffer);
+    console.log('Imagen restaurada guardada en:', outputPath);
+}
+
+reverseDistortion('distorted.png', 'restored.png');
+
+```
+Ejecuta el script nuevamente:
+
+node index.js
+
+
 [-> Ver Explicación Simple de la Implementación](https://github.com/jhoney787813/laboratorio_reticulas_y_distorsiones/blob/main/explicacion.md)
 
 ---
