@@ -1,9 +1,10 @@
-🎬 Explicación Simple de la Implementación de Código de Retículas
+# 🎬 Explicación Simple de la Implementación de Código de Retículas
 
-📌 ¿Qué hace este código?
+## 📌 ¿Qué hace este código?
+
 Este código toma una imagen, la divide en cuadritos (retículas) y los mueve un poco en diferentes direcciones para distorsionarla. Luego, con el mismo patrón, podemos revertir la distorsión y recuperar la imagen original.
 
-📌 ¿Cómo funciona?
+## 📌 ¿Cómo funciona?
 
 Cargamos la imagen 📷
 
@@ -16,7 +17,8 @@ Guardamos la imagen distorsionada.
 Recuperamos la imagen original 🔄
 
 Si conocemos la misma fórmula usada para distorsionar, podemos invertir el proceso y reconstruir la imagen original.
-📌 ¿Para qué sirve?
+ 
+ ## 📌 ¿Para qué sirve?
 
 Seguridad digital 🔒: Se puede usar para esconder información en imágenes.
 
